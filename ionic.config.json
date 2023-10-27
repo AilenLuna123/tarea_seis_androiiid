@@ -1,0 +1,7 @@
+{
+  "name": "tarea_seis_android",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
