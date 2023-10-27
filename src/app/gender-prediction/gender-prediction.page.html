@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Predicción de Género</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">Nombre</ion-label>
+    <ion-input [(ngModel)]="name" name="name"></ion-input>
+  </ion-item>
+  <ion-button (click)="predictGender()">Predecir Género</ion-button>
+  <div *ngIf="gender">
+    <p *ngIf="gender === 'male'" style="color: blue">Hombre</p>
+    <p *ngIf="gender === 'female'" style="color: pink">Mujer</p>
+  </div>
+</ion-content>
